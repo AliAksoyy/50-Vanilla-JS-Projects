@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+     min-height: 100vh;
+}
+
+#view1 {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  border: 2px solid red;
+  gap: 20px;
+  flex-wrap: wrap;
+  overflow: auto;
+  padding-bottom: 30px;
+}
+
+#view {
+  border: 2px solid red;
+  padding: 50px;
+  width: 12rem;
+  height: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: aliceblue;
+}
