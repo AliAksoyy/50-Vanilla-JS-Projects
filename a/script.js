@@ -1,16 +1,11 @@
-function first() {
-  console.log("first");
-  second();
+function a() {
+  console.log("a");
 }
 
-function second() {
-  console.log("second");
-  third();
-}
+const a1 = {
+  a: "a",
+};
 
-function third() {
-  console.log("third");
+const a2 = a.bind(a1);
 
-}
-
-first()
+a2();
