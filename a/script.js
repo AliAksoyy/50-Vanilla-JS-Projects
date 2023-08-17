@@ -1,9 +1,16 @@
-const a = document.querySelector(".a");
-const b = document.querySelector(".b");
-const c = document.querySelector(".c");
-const d = document.querySelector(".d");
-const divs = document.querySelectorAll("div");
+function first() {
+  console.log("first");
+  second();
+}
 
-document.addEventListener("readystatechange", (e) => {
-    console.log(e.target.readyState)
-})
+function second() {
+  console.log("second");
+  third();
+}
+
+function third() {
+  console.log("third");
+
+}
+
+first()
