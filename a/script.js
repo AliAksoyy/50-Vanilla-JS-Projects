@@ -1,20 +1,11 @@
-const arr = [1, 2, 3, 4, 5];
+let arr = [1, 2, 3, 4];
 
-const area = (list) => {
-  return list * Math.PI;
-};
-
-Array.prototype.hesapla = function (area) {
-  const out = [];
+Array.prototype.hesapla = function (cb) {
+  let out = [];
   for (let i = 0; i < this.length; i++) {
-    out.push(area(this[i]));
+    out.push(cb(this[i]));
   }
   return out;
 };
 
-// console.log(Array.prototype.hesapla(arr, area));
-console.log(
-  arr.hesapla((list) => {
-    return list * Math.PI;
-  })
-);
+console.log(arr.hesapla((list) => list * Math.PI));
