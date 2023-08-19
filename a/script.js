@@ -1,11 +1,25 @@
-let arr = [1, 2, 3, 4];
+const users = [
+  { firstName: "Ali", lastName: "Aksoy", age: 33 },
+  { firstName: "Beyda", lastName: "Aksoy", age: 4 },
+  { firstName: "Feyza", lastName: "Aksoy", age: 30 },
+  { firstName: "Mustafa", lastName: "Aksoy", age: 30 },
+  { firstName: "AhmetIsa", lastName: "Aksoy", age: 33 },
+];
 
-Array.prototype.hesapla = function (cb) {
-  let out = [];
-  for (let i = 0; i < this.length; i++) {
-    out.push(cb(this[i]));
+const se = users.reduce((acc, cur) => {
+  console.log("acc", acc);
+  console.log("cur", cur);
+  const newAcc = acc;
+  const { age } = cur;
+  console.log(age);
+  if (!acc[age]) {
+    console.log(acc[age]);
+    return { ...newAcc, [age]: 1 };
+  } else {
+    console.log("object");
+
+    return { ...newAcc, [age]: ++newAcc[age] };
   }
-  return out;
-};
+}, {});
 
-console.log(arr.hesapla((list) => list * Math.PI));
+console.log("se", se);
