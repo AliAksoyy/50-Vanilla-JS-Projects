@@ -1,20 +1,20 @@
-const list = [3, 4, 5];
+const arr = [1, 2, 3, 4, 5];
 
-const area = (a) => {
-  return Math.trunc(Math.PI * a * a);
+const area = (list) => {
+  return list * Math.PI;
 };
 
-const c = (a) => {
-  return 2 * Math.PI * a;
-};
-
-const hesapla = (list, arrange) => {
-  let output = [];
-  for (let a of list) {
-    output.push(arrange(a));
+Array.prototype.hesapla = function (area) {
+  const out = [];
+  for (let i = 0; i < this.length; i++) {
+    out.push(area(this[i]));
   }
-  return output;
+  return out;
 };
 
-console.log(hesapla(list, area));
-console.log(hesapla(list, c));
+// console.log(Array.prototype.hesapla(arr, area));
+console.log(
+  arr.hesapla((list) => {
+    return list * Math.PI;
+  })
+);
