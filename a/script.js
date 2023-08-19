@@ -1,25 +1,20 @@
-function outer() {
-  let username = "ss";
-  let a = {
-    a: 2,
-    c: function () {
-      console.log("cddfsdfsd");
-    },
-  };
+const list = [3, 4, 5];
 
-  function inner() {
-    let secret = "sdff";
-    console.log(username);
+const area = (a) => {
+  return Math.trunc(Math.PI * a * a);
+};
 
-    function inner2() {
-      a.c();
-      console.log(secret);
-    }
+const c = (a) => {
+  return 2 * Math.PI * a;
+};
 
-    inner2();
+const hesapla = (list, arrange) => {
+  let output = [];
+  for (let a of list) {
+    output.push(arrange(a));
   }
-  inner();
-}
+  return output;
+};
 
-outer();
-// console.log("object", username);
+console.log(hesapla(list, area));
+console.log(hesapla(list, c));
