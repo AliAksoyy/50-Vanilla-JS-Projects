@@ -1,18 +1,22 @@
-const a = [
-  { name: "beyda", brand: "b" },
-  { name: "ali", brand: "b1" },
-  { name: "feyza", brand: "b" },
-];
+const lists = document.querySelectorAll("nav ul li");
 
-let group = "brand";
+lists.forEach((list) => {
+  list.addEventListener("click", (e) => {
+    e.preventDefault();
+    [...lists].map((list) => list.classList.remove("active"));
+    list.classList.add("active");
+  });
+});
 
-let g = a.reduce((acc, cur) => {
-  let key = cur[group];
-  console.log(key);
-  if (!acc[key]) {
-    acc[key] = [];
-  }
-  acc[key].push(cur);
-  return acc
-}, {});
-console.log(g)
+document
+  .querySelector(".active")
+  .scrollIntoView({ inline: "center", blocking: "center", behavior: "smooth" });
+
+document.getElementById("top").addEventListener("click", (e) => {
+  e.preventDefault();
+  document.body.scrollIntoView({
+    behavior: "smooth",
+    inline: "center",
+    blocking: "center",
+  });
+});
