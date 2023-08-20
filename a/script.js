@@ -1,14 +1,18 @@
-console.log("s");
+const a = [
+  { name: "beyda", brand: "b" },
+  { name: "ali", brand: "b1" },
+  { name: "feyza", brand: "b" },
+];
 
-setTimeout(() => {
-  console.log("callback");
-}, 5000);
+let group = "brand";
 
-let startDate = new Date().getTime();
-let endDate = startDate;
-
-while (endDate < startDate + 10000) {
-  endDate = new Date().getTime();
-}
-
-console.log("while expires");
+let g = a.reduce((acc, cur) => {
+  let key = cur[group];
+  console.log(key);
+  if (!acc[key]) {
+    acc[key] = [];
+  }
+  acc[key].push(cur);
+  return acc
+}, {});
+console.log(g)
