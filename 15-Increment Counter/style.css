@@ -1,17 +1,38 @@
-@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Muli" sans-serif;
+  font-family: "Roboto Mono" sans-serif;
+  color: #fff;
   height: 100vh;
   margin: 0;
-  background-color: #eafbff;
+  background-color: #8e44ad;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
 
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px 50px;
+  align-items: center;
+  text-align: center;
+}
+
+.counter {
+  font-size: 60px;
+  margin-top: 10px;
+}
+
+@media (max-width: 580px)   {
+  body {
+    flex-direction: column;
+  }
+  
+}

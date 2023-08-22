@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+            outline: 0;
+            border: 0;
+        }
+
+        body {
+            height: 2000px;
+        }
+        nav {
+            overflow-x: auto;
+            padding: 0 20px;
+            position: sticky;
+            top: 0;
+
+        }
+        nav ul {
+            display: flex;
+            height: 60px;
+            align-items: center;
+        }
+
+        nav ul li {
+            padding-right: 20px;
+        }
+
+        nav ul li.active a{
+            background-color: lime;
+        }
+
+        nav ul li a{
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+           display: flex;
+            padding: 0 30px;
+            border-radius: 30px;
+            background-color: #eee;
+            color:#333;
+            white-space: nowrap;
+        }
+
+        #top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        section {
+            background-color: rgb(142, 49, 40);
+            height: 700px;
+            margin-top:10px
+        }
+    </style>
+</head>
+<body>
+    <a href="#" id="top">Yukari cik</a>
+   <nav>
+    <ul>
+        <li class="active">
+            <a href="#section1">Section 1</a>
+        </li>
+        <li>
+            <a href="#section2">Section 2</a>
+        </li>
+        <li >
+            <a href="#section3">Section 3</a>
+        </li>
+        <li>
+            <a href="#section4">Section 4</a>
+        </li>
+        <li>
+            <a href="#section5">Section 5</a>
+        </li>
+        <li>
+            <a href="#section6">Section 6</a>
+        </li>
+    </ul>
+   </nav>
+   <section id="section1">Section1</section>
+   <section id="section2">Section2</section>
+   <section id="section3">Section3</section>
+   <section id="section4">Section4</section>
+   <section id="section5">Section5</section>
+   <section id="section6">Section6</section>
+   <script src="script.js"></script>
+</body>
+</html>
