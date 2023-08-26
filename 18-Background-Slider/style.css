@@ -10,7 +10,6 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   align-items: center;
   overflow: hidden;
-  background-image: url("https://images.unsplash.com/photo-1692545052324-12e7e39a9871?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDF8Ym84alFLVGFFMFl8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60");
   background-position: center center;
   background-size: cover;
   transition: 0.4s ease;
