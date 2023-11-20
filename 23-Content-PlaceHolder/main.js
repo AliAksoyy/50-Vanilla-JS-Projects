@@ -8,7 +8,6 @@ const date = document.getElementById("date");
 const animated_bgs = document.querySelectorAll(".animated-bg");
 const animated_bg_texts = document.querySelectorAll(".animated-bg-text");
 
-console.log(profile_img);
 
 setTimeout(getDate, 2500);
 
