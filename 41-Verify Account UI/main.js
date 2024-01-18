@@ -1,5 +1,5 @@
 const codes = document.querySelectorAll(".code");
-console.log(codes);
+
 
 codes[0].focus();
 
