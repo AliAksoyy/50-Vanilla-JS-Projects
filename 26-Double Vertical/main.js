@@ -21,7 +21,7 @@ function changeSlide(direction) {
       activeSlideIndex = 0;
     }
   } else if (direction === "down") {
-    console.log("object");
+    
     activeSlideIndex--;
     if (activeSlideIndex < 0) {
       activeSlideIndex = slidesLength - 1;
