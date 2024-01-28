@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Feed Back UI Design</title>
+  </head>
+  <body>
+    <div id="panel" class="panel-container">
+      <strong
+        >How satisfied are you with our <br />
+        customer support performance
+      </strong>
+      <div class="ratings-container">
+  <div class="rating">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3kNgod0sJeWnNiBjOrdpAo01TeQ4NicwTdQ&usqp=CAU" alt="" />
+        <small>UnHappy</small>
+      </div>
+      <div class="rating">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAA5FBMVEX/////yihtTEG3bAn/xgD/ySf/zCnssiGzZgb/0Cb/zif/yBT/yR1rSkFkREJiQkL/56y7cQv//vr/78loR0L/4pf/9d3/7sT/zj5jQ0L/+/H/5aP/z0Xeri9fP0P/6bNiPC7XqDD/+Obxviv/2HGAXT7/0lb/1WP/12n/8c7/34/GmTP5xSmkfDm2jDb/89aYcju/kzWOaTxyUEBgOSv/23ymfjl9Wj/oty2RenOHYz3p5eSwhjfg2tm1p6PPoTKTbjt5XFKFamLQyMVdODOikYvFureOd3B+YlmtnplyU0jMwsAkiMM2AAAJqUlEQVR4nO2dDVfiOBfHsVOyT9v0ZaG8CVQURQVFURGVGd2Z2dnZnfn+3+dpQaQt2N6kaZtKfufMzPGcacy/9ya5uUmTUkkgEAgEAoFAIBAIBAKBQCAQCHhiv35VbVjtdm1Ya7etRvWqvp93lVhRuToYnnWw7KKt8X7EnbPhwVUl7womoVK3psgVhnF5bxtljF2paGrVCymz3h5gV9xWaUFcmXjQruddYSIq1akGU+dTqU0bRTFlY4plEnVvKmV83Mi78vEc1ejkrURqQ77dtTGQNWp5K5EDbg1ZsVAC8/k1Ni0eW2SlpiU13xtlTWvzppGlvgW8abQY61tqtPKW9Ua1KTPX5yE3q3lLW7B/Km8PypJTlk85iM8totiFFJy7qx510nHQNXLnKE+BFpMBMBos52dGtwWmrs8jt9Z4jtM34BKMz/MQ2M7GgEvkdvYCz7IU6Eo8y1jffod9EBON1sm0MR5l1gTXYJzhsHGupRXFRFHWMutvGtk2wTVyRnPjg7wEuhIPshBo5SfQlZhBfJOjBRcSU7dibm3wTWLKbbGat0BXYqrT4nr+Al2JKWZU97MOZLZS1lKLbirN7COZbeBmWgpP+RDoSjxNR2CNh0a4RK6lIZCDbnSNnEKIykcv80YKvc2Al0a4BA9YC8w0ZwGBdV6Di6E+iMx2QszJSOiH7ajY5qubWaIx9NMj/nzUg6GfctaPrmAX2nA11vthNpFq5pFZg1Bm1NlYPHYzS9ikbSr8CnT7UxbbGWpcK2QwyeDahEyMyLUJWRiRcxMyMCKX8ZqfxLEbyltBLCiZwNxT3PEkTIJzGpH6STbb53Diu0miHPiQ937GQxsmUMi/j3pgeoEF6Gc8EvQ1xwWx4TGtwEoxBLoSaeOagjhpAjedFsaGU0qFRRgqlmh0Aq8InRSpqqIs/iC6aBYh92FlUQhhAZSDPtG0wq3cw+j+aTabnVyPu3sKuUak7HXH114JT/ejB4VIJOUEgyQmVS8mM8ewdQ/bMFuXD4QakfJw2TLtVQnObFJW4U/TxaYEc1+kjm1Dl3zY5l99ghruqf2/TNtfgG7oYwIzUs2D4c1QfZgZkh5Q6Gp0RmAzImXk2OECJGP2AH5J8hWFQnAzVF7MXu/r4zepF6yheQ00AlKvzZ707fFrL1iCbr4owDpQfZYBDdmUidN7Xjzx/WuwhsbTHkQi2nv6+9/vXgHz/0IvyZkAJVIFbkAXU0fOr/nqmcdgDe0biJupN3//WBUwD3mqMwI6KkUuYx/WDNUHpzdfP/UtWMHWfbwNlHvzcV3A/C4kEdgWZfKdC7COBu3d9v7xPTUPu9lhXAXVQ6fn/73PobZ4C/J0mq7mANTRKJ+NQP1Kj3qogjHxDUK3+g9/AZXQOzI+g5qiRr7vdAjpaNCFo/8MPPZPqIKtSbQR1YnR+x4oIeToknMBMSImT2WcQRSqn+2gBUrfQwolKUahJPW+BEp4DA+snyEtEZN/cdKBLIuiW0mKUWhGtkT10Awr/Bke+W8hNix3iBWCnLRrStK/gceewwrty6h2pFzaUqCrKpV+hZ3A7IJGVVKBoMHCDUcl6W7uf+5ruH76bZQNPSeQvvkLCPfG7jsaQ9xUJo1MQRtMlBvPo3yjWen3Rv0ks/++CVDfdQIp0NVsOKmk30B6U+KtJ6DhUPEs4PeyTQNEO9nCzV3WbrDh5V5DBCkkHRBBO0yQsajB3X+vD212pC7Gy/tOpr4sS5BWnc2PrSVA2iHxzhPIgI8uWssq9H49f5nPf/+821I9yYgILdXRq8K7n7/n8y/P4enJawllgETiIR+yxQSVjVUleh7bage0YXQJ8VWhmD+BZoeKsb1KAVoRA6L60gKUYEDaYUoKZxsd3ybmQ0RP82DGF6DPQApJk1GgLRjKtR1fQTsirkQXkAIiY4Y3haSbMkAK3zqKKAs8RcY0J/FeENVVpa1wOWDHWCAyIllERTFEhQwJFMLyUMpTrAmcyPqhvhNXQLQTrBWStkOYQvUlzohxIdcy8Is0YcRok0QhcMulchtTQSdmYoC6MUbUQTEbxWgBS2J4WZbI+tnXcfWL64/jMz2vCkljGujO55gK6rEpiJgBI/4VvUIcl0Jz+l4mKcIA3XgDqFF+GpvJWisknVuAP0BA/Y0Fh7VAUMpambwrUddBI8VCIen8sAJfl+lL7/gZNCf/rkRbgi9gEc/xCTYlqhcn2+Jn2wavqygv9raX1Dq5gK/Qkaf1Qbm218LVsROuoe7cECwgqv0bJ+zrtkOygEixRgrKl65Q+temf4nUNk8OiRaBkXJ44n9LumFe9qEusFBIni8F5bx9NexPThzTMGzbaDnSZVclWQH2UNXuveS0vAIM0zmZ9MmWySly3sAh/w2kKuXuaDweTw77ZNsMfCX0DyduCaNumbgEinUL0r0me4vdIgvod06vCiAvgWLtCbh+yAsU64cF2MPuh2Y/e0G2Xi6hWsfn+JO1Taj2YlB0NflBtZ+G+++B/NB9G1SAby1WUH5zwf0nT2so9yYW4nOSJVTNsLQDe4R3YJ/3x9+rX5jxgv470oIEbvTfzBTFTZN8Y1kMN6XtST3IUhk5QZHAWFOIQT/ZOYoFiE0TnvpVgL4m6YGmBchlJBPI/wQj8ZkK3Mc1yQ83+fBnm/BuRBaHDNEaEZFBKZDFqXS0RvyDDEqFTK69ojuEHX36HwmfqIzI6oh2qvPa0J+fSPiTRiGr89roztzLQiG7w8tpDoHOQCHDI6FpzhDOQCHLs4QpzthNXyHbc3bJz6BNXSHjk9nJp8KpK2R8jjC5n6Y9HrK/44p4tl8mg7B09ud578CZ7KVznhIaaZyrvwN3I+zA/RYc3VGS2lXBnPQ26d0zw0kOPM27grjIEKd9pVXuEtO/P+/D37u2A3fn7cD9hztwh6WXmsrlHtJ0b80LUk/1QvXtYJzqOBjmw98HXPr4dzqXduBe7lLpKsO71Sl3VyZl/zQbM8qnWTfBNZacvhlxNnHMexx10jaj3MnwwvGtWKkOjZjqQwrGuK0xrQinnGcL9FNtpuOqcjPDMC0GS2Mf4mg8OOiaSo2xRk1rp5ZQo4SlxjKH+jwqbcRkeMRy0+JR34LGQE5qSE0eZDbPpeKohhMYEsvaMO8BHkB1SifSlXfMt/l8VKeaTBTrYPf/Txvctr6t1NsDDFPpqsODdqYpClZU6tYUybKm4e1hXRlrmiyjqXVVLOOFqNQPascdLHtKPfDyH/dn3DmuHdQLLc7Pfv28YdVqteFw6P5tNc7rfMTUAoFAIBAIBAKBQCAQCAQCgUCw4v9UWP++kyzAggAAAABJRU5ErkJggg==" alt="" />
+        <small>Neutral</small>
+      </div>
+      <div class="rating active">
+        <img src="https://visualpharm.com/assets/403/Happy-595b40b65ba036ed117d41eb.svg" alt="" />
+        <small>Satisfied</small>
+      </div>
+      </div>
+    <button class="btn" id="send">Send Review</button>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
