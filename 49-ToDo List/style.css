@@ -26,6 +26,8 @@ form {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   max-width: 100%;
   width: 400px;
+  overflow: auto;
+  max-height: 300px;
 }
 
 .input {
@@ -43,6 +45,8 @@ form {
 
 .input:focus {
   outline: 0;
+
+  border: 2px solid rgb(179, 131, 226);
 }
 
 .todos {
